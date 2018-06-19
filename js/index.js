@@ -3,7 +3,7 @@ $(function() {
 	c.load("<p><div class='bef_comment writecode'>/**</div>");
 	c.load("<div class='bef_comment writecode'>&nbsp;</div>");
 	c.load("<div class='bef_comment writecode'>&nbsp;*hi,我的名字叫王凌翔，是长沙一家互联网创业公司的前端工程师</div>");
-	c.load("<div class='bef_comment writecode'>&nbsp;*我的主要工作是解决用户的交互体验</div>",2000);
+	c.load("<div class='bef_comment writecode'>&nbsp;*我的主要工作是移动端开发</div>",2000);
 	c.load("<div class='bef_comment writecode'>&nbsp;*让我们来点实际的，看看我能做些什么</div>");
 	c.load("<div class='bef_comment writecode'>&nbsp;*/</div></p>");
 	c.load("<p><div class='bef_comment writecode'>/**</div>");
@@ -43,7 +43,7 @@ $(function() {
 	c.load("<div class='code writecode'>&nbsp;<span class='bef_key'>overflow</span>: <span class='bef_value'>hidden</span>;</div>");
 	c.setClass("pre:not(:empty)", [{
 		"name": "overflow",
-		"val": "hidden"
+		"val": "scroll"
 	}]);
 	c.load("<div class='code writecode'>&nbsp;<span class='bef_key'>background</span>: <span class='bef_value'>rgb(48, 48, 48)</span>;</div>");
 	c.setClass("pre:not(:empty)", [{
@@ -138,6 +138,7 @@ $(function() {
 		"name": "-webkit-perspective",
 		"val": "1000px"
 	}]);
+
   	c.load("<div class='code writecode'>}</div></p>");
   	c.load("<p><div class='code writecode'><span class='selector'>#style-text</span> {</div>");
   	c.load("<div class='code writecode'>&nbsp;<span class='key'>-webkit-transform</span>: <span class='value'>translateX(98.5%) rotateY(-10deg)</span>;</div>");
@@ -155,6 +156,7 @@ $(function() {
 		"name": "max-height",
 		"val": "94.5%"
 	}]);
+
   	c.load("<div class='code writecode'>}</div></p>");
   	c.load("<p><div class='comment writecode'>/**</div>");
 	c.load("<div class='comment writecode'>&nbsp;*现在我们差不多可以开始写我的简历了</div>");
@@ -168,34 +170,66 @@ $(function() {
 	var r = new Coder("work-text");
 	r.load("<div id='md'></div>");
 	var w = new Coder("md");
+    c.setClass("#work-text", [{
+        "name": "overflow",
+        "val": "auto"
+    }]);
 	w.load("<h1 class='writecode'>简历</h1>");
+    w.load("<div style='width: 74px; height: 74px; float:left; border-radius: 50%; border: 3px solid #eee; overflow: hidden'><img src='img/1.jpg' width=\"80\" height=\"80\"/></div>");
+    // c.setClass("#ava", [{
+    //     "name": "border-bottom",
+    //     "val": "1px solid #ccc"
+    // }]);
 	w.load("<p><div class='writecode'>姓名：王凌翔</div>");
-	w.load("<div class='writecode'>大专---计算机网络</div>");
+	//w.load("<div class='writecode'>大专---计算机网络</div>");
 	w.load("<div class='writecode'>职业：前端/NodeJS 开发工程师</div></p>");
-	w.load("<h1 class='writecode'>联系我</h1>");
+	w.load("<h1 class='writecode'>教育背景</h1>");
 	w.load("<ul>");
-	w.load("<li class='writecode'>mail:1411939998@qq.com</li>");
+	w.load("<li class='writecode'>学校:湖南网络工程学院 专业：计算机网络 </li>");
+   // w.load("<li class='writecode'>学校:湖南网络工程学院 </li>");
 	//w.load("<li class='writecode'>blog:<a href='http://blog.youlunshidai.com' target='_blank'>blog.youlunshidai.com</a></li>");
-	w.load("<li class='writecode'>github:<a href='https://github.com/wlingxiang' target='_blank'>https://github.com/wlingxiang</a></li>");
+	w.load("<li class='writecode'>主要课程：<div>服务器架设项目实训，Linux系统管理与网络服务，C#程序设计基础，</div><div>C#程序设计基础，构建企业级交换网络，ASP.NET编程技术</div> </li>");
 	w.load("</ul>");
 	w.load("<h1 class='writecode'>技能</h1>");
 	w.load("<ul>");
 	//w.load("<li class='writecode'>精通Lotus/Domino开发技术，有过7年文档型数据库开发管理经验</li>");
-	w.load("<li class='writecode'>熟练Nodejs技术,熟练运用express框架</li>");
-	w.load("<li class='writecode'>熟练各种Web前端开发技术Ajax,H5,CSS3,jQuery,React,Vue</li>");
+	w.load("<li class='writecode'>熟练JavaScript ,jQuery,Dom,Ajax,BootStrap</li>");
+	w.load("<li class='writecode'>熟练NodeJs,PHP,Vue,React,AngularJS,</li>");
 	//w.load("<li class='writecode'>熟练与各平台和硬件的技术对接（如: 微信接口，三方支付，系统整合）</li>");
-	w.load("<li class='writecode'>熟练Mysql,mongodb和文档型数据库(domino)</li>");
+	w.load("<li class='writecode'>熟悉Mysql,MongoDB</li>");
 	//w.load("<li class='writecode'>熟练windows server,linux服务器部署和管理，及常见问题的处理</li>");
-	w.load("<li class='writecode'>熟练gulp,git等常用版本管理工具</li>");
-	w.load("<li class='writecode'>有过vue,react的实战经验</li>");
+	w.load("<li class='writecode'>有WebApp,微信小程序实战经验</li>");
+	w.load("<li class='writecode'>熟练gulp,git常用版本管理工具</li>");
+    w.load("<li class='writecode'>能独立阅读官方开发文档及网上查阅资料解决问题的能力</li>");
 	w.load("</ul>");
+    w.load("<h1 class='writecode'>自我介绍</h1>");
+    // w.load("<span class='writecode'>喜欢跑步，羽毛球，徒手健身\n" +
+    //     "对计算机有着狂热的喜爱，虽掌握软件众多，但对编程情有独钟\n" +
+    //     "每一次解决问题都有一种成就感，这就是让我沉迷于代码世界的无限动力\n" +
+    //     "喜欢开发自己的小型产品，追求技术上的满足感\n" +
+    //     "有良好的编程习惯，以及程序错误控制和解决能力\n" +
+    //     "用心工作，用心生活，我可能不是最好的，最合适的，我觉我是最有潜力的</span>");
+    w.load("<ul>");
+
+    w.load("<li class='writecode'>喜欢跑步，羽毛球，徒手健身</li>");
+     w.load("<li class='writecode'>对计算机有着狂热的喜爱，虽掌握软件众多，但对编程情有独钟</li>");
+
+     w.load("<li class='writecode'>每一次解决问题都有一种成就感，这就是让我沉迷于代码世界的无限动力</li>");
+
+     w.load("<li class='writecode'>喜欢开发自己的小型产品，追求技术上的满足感</li>");
+     w.load("<li class='writecode'>有良好的编程习惯，以及程序错误控制和解决能力</li>");
+     w.load("<li class='writecode'>能独立阅读官方开发文档及网上查阅资料解决问题的能力</li>");
+     w.load("</ul>");
+
+
 	w.load("<h1 class='writecode'>项目</h1>");
 	w.load("<ul>");
-	w.load("<li class='writecode'><a href='http://www.huiyoulun.com' target='_blank'>www.huiyoulun.com</a></li>");
-	w.load("<li class='writecode'><a href='http://www.youlunshidai.com' target='_blank'>www.youlunshidai.com</a></li>");
-	w.load("<li class='writecode'><a href='http://wap.huiyoulun.com' target='_blank'>wap.huiyoulun.com</a></li>");
-	w.load("<li class='writecode'><a href='http://www.4000191177.com' target='_blank'>www.4000191177.com</a></li>");
-	w.load("<li class='writecode'><a href='http://jianianhua.youlunshidai.com/' target='_blank'>jianianhua.youlunshidai.com</a></li>");
+	w.load("<li class='writecode'>项目一：仿饿了么 <a href='https://github.com/wlingxiang/vue.git'>wlingxiang/vue.git</a> <div>采用vue-cli+webpack初始化项目，ES6编写js代码,stylus编写css代码</div> <div>Nodejs加载数据，使用json模拟后端数据,flex弹性布局</div></li>");
+
+    w.load("<li class='writecode'>项目二：个人博客</li>");
+	w.load("<li class='writecode'>项目三：仿网易云音乐 </li>");
+	w.load("<li class='writecode'>项目四：仿qq阅读</li>");
+
 	w.load("</ul>");
 	c.load("<p><div class='comment writecode'>/**</div>");
 	c.load("<div class='comment writecode'>&nbsp;*左面的简历看起来不是太令人满意，让我们先给他来点动态渲染</div>");
@@ -234,6 +268,7 @@ $(function() {
 		"name": "font-family",
 		"val": "'Helvetica Neue', Helvetica, sans-serif"
 	}]);
+
 	c.load("<div class='code writecode'>}</div></p>");
 	c.load("<p><div class='code writecode'><span class='selector'>#md h1</span> { </div>");
 	c.load("<div class='code writecode'>&nbsp;<span class='key'>border-bottom</span>: <span class='value'>1px solid #ccc</span>;</div>");
@@ -241,11 +276,28 @@ $(function() {
 		"name": "border-bottom",
 		"val": "1px solid #ccc"
 	}]);
-	c.load("<div class='code writecode'>&nbsp;<span class='key'>padding-bottom</span>: <span class='value'>5px</span>;</div>");
-	c.setClass("#md h1", [{
-		"name": "padding-bottom",
-		"val": "5px"
-	}]);
+    c.load("<div class='code writecode'>&nbsp;<span class='key'>color</span>: <span class='value'>blue</span>;</div>");
+    c.setClass("#md h1", [{
+        "name": "color",
+        "val": "blue"
+    }]);
+    c.load("<div class='code writecode'>&nbsp;<span class='key'>padding-bottom</span>: <span class='value'>5px</span>;</div>");
+    c.setClass("#md h1", [{
+        "name": "padding-bottom",
+        "val": "5px"
+    }]);
+    c.load("<p><div class='code writecode'><span class='selector'>#md :not(h1)</span> { </div>");
+    c.load("<div class='code writecode'>&nbsp;<span class='key'>color</span>: <span class='value'>black</span>;</div>");
+    c.setClass("#md :not(h1)", [{
+        "name": "color",
+        "val": "black"
+    }]);
+    c.load("<div class='code writecode'>&nbsp;<span class='key'>font-weight</span>: <span class='value'>900</span>;</div>");
+    c.setClass("#md :not(h1)", [{
+        "name": "font-weight",
+        "val": "900"
+    }]);
+
 	c.load("<div class='code writecode'>}</div></p>");
 	c.load("<p><div class='code writecode'><span class='selector'>#md li</span> { </div>");
 	c.load("<div class='code writecode'>&nbsp;<span class='key'>margin</span>: <span class='value'>5<span class='px'>px</span> 0</span>;</div>");
@@ -253,6 +305,7 @@ $(function() {
 		"name": "margin",
 		"val": "5px 0"
 	}]);
+    
 	c.load("<div class='code writecode'>}</div></p>");
 	c.load("<p><div class='code writecode'><span class='selector'>#md h1,#md ul</span> { </div>");
 	c.load("<div class='code writecode'>&nbsp;<span class='key'>margin</span>: <span class='value'>0</span>;</div>");
@@ -260,6 +313,21 @@ $(function() {
 		"name": "margin",
 		"val": "0"
 	}]);
+
+    c.load("<div class='comment writecode'>&nbsp;*再加个背景图片会更好</div>");
+    c.load("<p><div class='code writecode'><span class='selector'>#md</span> { </div>");
+    c.load("<div class='code writecode'>&nbsp;<span class='key'>background</span>: <span class='value'>url(img/4.jpg)  no-repeat</span>;</div>");
+    c.setClass("#md", [{
+        "name": "background",
+        "val": "url(img/4.jpg)  no-repeat"
+    }]);
+    c.load("<div class='comment writecode'>&nbsp;要让他铺满整个背景</div>");
+    c.load("<div class='code writecode'>&nbsp;<span class='key'>background-size</span>: <span class='value'>cover</span>;</div>");
+    c.setClass("#md", [{
+        "name": "background-size",
+        "val": "cover"
+    }]);
+
 	c.load("<div class='code writecode'>}</div></p>");
 	c.load("<p><div class='comment writecode'>/**</div>");
 	c.load("<div class='comment writecode'>&nbsp;*这样基本上就差不多了</div>");
@@ -267,7 +335,7 @@ $(function() {
 	c.load("<div class='comment writecode'>&nbsp;*如果你想和我联系</div>");
 	c.load("<div class='comment writecode'>&nbsp;*QQ/微信:1411939998</div>");
 	c.load("<div class='comment writecode'>&nbsp;*mobile:18569439506</div>");
-	c.load("<div class='comment writecode'>&nbsp;*最后非常感谢您愿意花3分钟看完我的简历！</div>");
+	c.load("<div class='comment writecode'>&nbsp;*最后非常感谢您愿意花1分钟看完我的简历！</div>");
 	c.load("<div class='comment writecode'>&nbsp;*/</div></p>");
 
 });
@@ -283,7 +351,7 @@ Coder.prototype = {
 	load: function(code, second) {
 		var dom = this._dom;
 		var o = this;
-		var _second = second ? second : 1000;
+		var _second = second ? second : 366;
 		_second = m + _second;
 		setTimeout(function() {
 			$('#' + dom).scrollTop( $('#' + dom)[0].scrollHeight );
