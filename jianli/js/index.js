@@ -2,7 +2,7 @@ $(function() {
 	var c = new Coder("style-text");
 	c.load("<p><div class='bef_comment writecode'>/**</div>");
 	c.load("<div class='bef_comment writecode'>&nbsp;</div>");
-	c.load("<div class='bef_comment writecode'>&nbsp;*hi,我的名字叫王凌翔，是长沙一家互联网创业公司的前端工程师</div>");
+	c.load("<div class='bef_comment writecode'>&nbsp;*hi,我的名字叫王凌翔，是一名前端工程师</div>");
 	c.load("<div class='bef_comment writecode'>&nbsp;*我的主要工作是移动端开发</div>",2000);
 	c.load("<div class='bef_comment writecode'>&nbsp;*让我们来点实际的，看看我能做些什么</div>");
 	c.load("<div class='bef_comment writecode'>&nbsp;*/</div></p>");
@@ -182,7 +182,7 @@ $(function() {
     // }]);
 	w.load("<p><div class='writecode'>姓名：王凌翔</div>");
 	//w.load("<div class='writecode'>大专---计算机网络</div>");
-	w.load("<div class='writecode'>职业：前端/NodeJS 开发工程师</div></p>");
+	w.load("<div class='writecode'>职业：前端开发工程师</div></p>");
 	w.load("<h1 class='writecode'>教育背景</h1>");
 	w.load("<ul>");
 	w.load("<li class='writecode'>学校:湖南网络工程学院 专业：计算机网络 </li>");
@@ -192,14 +192,14 @@ $(function() {
 	w.load("</ul>");
 	w.load("<h1 class='writecode'>技能</h1>");
 	w.load("<ul>");
-	//w.load("<li class='writecode'>精通Lotus/Domino开发技术，有过7年文档型数据库开发管理经验</li>");
-	w.load("<li class='writecode'>熟练JavaScript ,jQuery,Dom,Ajax,BootStrap</li>");
+	
+	w.load("<li class='writecode'>熟练JavaScript ,ES6</li>");
 	w.load("<li class='writecode'>熟练NodeJs,PHP,Vue,React,AngularJS,</li>");
 	//w.load("<li class='writecode'>熟练与各平台和硬件的技术对接（如: 微信接口，三方支付，系统整合）</li>");
 	w.load("<li class='writecode'>熟悉Mysql,MongoDB</li>");
 	//w.load("<li class='writecode'>熟练windows server,linux服务器部署和管理，及常见问题的处理</li>");
 	w.load("<li class='writecode'>有WebApp,微信小程序实战经验</li>");
-	w.load("<li class='writecode'>熟练gulp,git常用版本管理工具</li>");
+	w.load("<li class='writecode'>熟悉npm git webpack</li>");
     w.load("<li class='writecode'>能独立阅读官方开发文档及网上查阅资料解决问题的能力</li>");
 	w.load("</ul>");
     w.load("<h1 class='writecode'>自我介绍</h1>");
@@ -224,11 +224,11 @@ $(function() {
 
 	w.load("<h1 class='writecode'>项目</h1>");
 	w.load("<ul>");
-	w.load("<li class='writecode'>项目一：仿饿了么 <a href='https://github.com/wlingxiang/vue.git'>wlingxiang/vue.git</a> <div>采用vue-cli+webpack初始化项目，ES6编写js代码,stylus编写css代码</div> <div>Nodejs加载数据，使用json模拟后端数据,flex弹性布局</div></li>");
+	w.load("<li class='writecode'>项目一：仿饿了么vue <a href='https://wlingxiang/github.io/seller'>wlingxiang/vue.git</a> <div>采用vue-cli+webpack初始化项目，ES6编写js代码,stylus编写css代码</div> <div>Nodejs加载数据，使用json模拟后端数据,flex弹性布局</div></li>");
 
-    w.load("<li class='writecode'>项目二：个人博客</li>");
-	w.load("<li class='writecode'>项目三：仿网易云音乐 </li>");
-	w.load("<li class='writecode'>项目四：仿qq阅读</li>");
+    w.load("<li class='writecode'>项目二：仿芒果tv微信</li>");
+	w.load("<li class='writecode'>项目三：仿美团react-native </li>");
+	
 
 	w.load("</ul>");
 	c.load("<p><div class='comment writecode'>/**</div>");
